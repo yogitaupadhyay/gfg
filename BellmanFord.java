@@ -46,7 +46,7 @@ public class BellmanFord{
 		}
 		int i=0;
 		for(int data:res){
-	System.out.println(i+" "+data);
+		System.out.println(i+" "+data);
 		i++;
 		}
 		//negative weight check

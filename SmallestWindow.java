@@ -1,4 +1,4 @@
-
+package sis.com;
 
 public class SmallestWindow {
 	public static String Window(String str,String pattern){

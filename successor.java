@@ -1,9 +1,9 @@
-package sis.nit;
+package sis.com;
 
 import java.util.Scanner;
 
 
-public class successor {
+public class Successor {
 
 	static class Node{
 		int data;

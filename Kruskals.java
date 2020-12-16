@@ -1,11 +1,11 @@
-
+package sis.com;
 
 import java.util.ArrayList;
 
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
-public class Kruskals {
+public class kruskals {
 
 	class Edge implements Comparator<Edge>{
 		int src;
@@ -33,7 +33,7 @@ public class Kruskals {
 	int v;
 	int e;
 	ArrayList<Edge>edge=null;
-	Kruskals(int v,int e){
+	kruskals(int v,int e){
 		this.v=v;
 		this.e=e;
 		edge=new ArrayList<Edge>(e);
@@ -77,38 +77,35 @@ public class Kruskals {
 			System.out.print(e.weight+" ");
 		}
 		initialise(arr, size);
-		System.out.println("res="+res.size());
-	
+		while(res.size()!=v){
+			//System.out.println("res="+res.size());
 		e=0;
-			while(res.size()!=v){
 		int src=edge.get(e).src;
 		int dest=edge.get(e).dest;
 		
 		int x=root(arr,src);
 		int y=root(arr,dest);
-		
 		if(x!=y){
 			    r.add(edge.get(e));
 			if(!res.contains(x)){
 				res.add(x);
-			}
-			if(!res.contains(y)){
+			}else if(!res.contains(y)){
 				res.add(y);
 			}
 			union(arr,size,x,y);
 		}
 		e++;
 		}
-		/*for(int i=0;i<v;i++){
+		for(int i=0;i<v;i++){
 			System.out.print(arr[i]+" ");
 		}
 		System.out.println();
 		for(int i=0;i<v;i++){
 			System.out.print(size[i]+" ");
-		}*/
-		System.out.println();
+		}
+		
 		for(Edge e:r){
-			System.out.println(e.src+" "+e.dest+" " +e.weight+" ");
+			System.out.print(e.src+" "+e.dest+" " +e.weight+" ");
 		}
 	}		
 
@@ -118,7 +115,7 @@ public class Kruskals {
 		Scanner scan=new Scanner(System.in);
 		int e=scan.nextInt();
 		int v=scan.nextInt();
-		Kruskals g=new Kruskals(v, e);
+		kruskals g=new kruskals(v, e);
 		for(int i=0;i<e;i++){
 			g.edge.get(i).src=scan.nextInt();
 			g.edge.get(i).dest=scan.nextInt();

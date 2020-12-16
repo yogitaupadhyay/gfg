@@ -1,15 +1,9 @@
 package sis.com;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.LinkedList;
-
-import sis.com.Graph.Node;
-
-public class Dijkstra {
-
+public class Graph {
+	
 	//make a node and assign values
 		 class Node{
 		 int vertex;
@@ -22,7 +16,7 @@ public class Dijkstra {
 
 		int v;
 	 LinkedList<Node> glist[];
-	 Dijkstra(int v){
+		Graph(int v){
 			this.v=v;
 			glist=new LinkedList[v+1];
 			for(int i=0;i<=v;i++){
@@ -44,34 +38,15 @@ public class Dijkstra {
 				}
 			}
 			
-			void algo(int source){
-				int dist[]=new int[glist.length];
-				ArrayList<Integer>minTree=new ArrayList<Integer>();
-				Arrays.fill(dist, Integer.MAX_VALUE);
-				dist[source]=0;
-				int min=0;//minimum distance
-				int minIndex=source;//vertex with minimum distance
-				
-				while(minTree.size()!=glist.length){
-					Iterator<Node>it=glist[minIndex].iterator();
-					while(it.hasNext()){
-						int weight=it.next().weight;	
-						int vertex=it.next().vertex;
-						if(dist[minIndex]+weight<dist[vertex]){
-							dist[vertex]=dist[minIndex]+weight;
-						}
-						min=Integer.MAX_VALUE;
-						if(dist[vertex]<min){
-							min=dist[vertex];
-							minIndex=vertex;
-						}
-						
+			void bellmanFord(int source){
+				int res[]=new int[glist.length];
+				Arrays.fill(res, Integer.MAX_VALUE);
+				res[source]=0;
+				for(int i=0;i<glist.length;i++){
+					for(int j=0;j<glist.length;j++){
+					System.out.println("HELLO");
 					}
-					minTree.add(minIndex);
-				System.out.println(minIndex+" = "+min);
 				}
-				
-				
 				
 			}
 			
@@ -79,7 +54,7 @@ public class Dijkstra {
 				System.out.println("enter no of vertex ");
 				java.util.Scanner scan=new java.util.Scanner(System.in);
 				int n=scan.nextInt();
-			Dijkstra g=new Dijkstra(n);
+				Graph g=new Graph(n);
 				System.out.println("enter no of edges");
 				int e=scan.nextInt();
 				for(int i=0;i<e;i++){
@@ -92,7 +67,6 @@ public class Dijkstra {
 				
 				g.print();
 				
-				g.algo(0);
+				
 			}
-
 }
