@@ -1,0 +1,48 @@
+set classpath=.;c:\packagedemo\classes;
+
+C:\packagedemo>
++---src
+    +---sis
+        +---animal
+        ¦       Dog.java
+        ¦       Tiger.java
+        ¦
+        +---flower
+        ¦       Rose.java
+        ¦
+        +---fruit
++---classes
+
+
+set classpath=.;c:\packagedemo\classes;
+javac -d c:\packagedemo\classes c:\packagedemo\src\sis\animal\*.java
+javac -d c:\packagedemo\classes c:\packagedemo\src\sis\flower\*.java
+
+package sis.flower;
+ public class Rose{ 
+ // todo
+ }//End of class 
+
+package sis.animal;
+ public class Dog{ 
+ // todo
+ }//End of class 
+
+ 
+  
+set classpath=.;c:\packagedemo\classes;
+ public class Test1 {
+
+	public static void main(String args[]){
+	
+	   java.util.Date d1  = new java.util.Date();
+	   System.out.println(d1);
+	   sis.animal.Tiger t1  = new sis.animal.Tiger();
+	   System.out.println(t1);
+	   
+	   
+	  
+	}//end main
+
+}//end class
+ 

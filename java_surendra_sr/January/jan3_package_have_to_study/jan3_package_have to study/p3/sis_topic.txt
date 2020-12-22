@@ -1,0 +1,57 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+03/01/2019 
+
+
+tree/f e:\p3
+
+
+md e:\p3\src
+md e:\p3\src\sis
+md e:\p3\src\sis\raipur
+md e:\p3\src\sis\mumbai
+md e:\p3\classes
+tree/f e:\p3
+
+set classpath=.;e:\p3\classes;
+echo %classpath%
+
+E:\P3
+¦   sis_topic.txt
+¦
++---classes
+
++---src
+    +---sis
+        +---mumbai
+        ¦       Child2.java
+        ¦       Other2.java
+        ¦
+        +---raipur
+                Child1.java
+                Other1.java
+                Parent.java
+
+				
+javac -d e:\p3\classes e:\p3\src\sis\raipur\Parent.java				
+javac -d e:\p3\classes e:\p3\src\sis\raipur\Child1.java
+javac -d e:\p3\classes e:\p3\src\sis\raipur\Other1.java
+javac -d e:\p3\classes e:\p3\src\sis\mumbai\Child2.java
+javac -d e:\p3\classes e:\p3\src\sis\mumbai\Other2.java
+javac -d e:\p3\classes e:\p3\src\sis\SisStartMain.java
+
+java sis.SisStartMain

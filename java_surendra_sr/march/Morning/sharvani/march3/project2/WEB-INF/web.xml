@@ -1,0 +1,53 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+  
+    <!-- servlet class configuration-->
+     <servlet>
+		 <servlet-name>d1</servlet-name>
+		 <servlet-class>DiceServlet</servlet-class>
+     </servlet>
+    <!-- servlet url mapping configuration-->
+	<servlet-mapping>
+		 <servlet-name>d1</servlet-name>
+		 <url-pattern>/pheko</url-pattern>
+	</servlet-mapping>
+	
+  <!-- servlet class configuration-->
+     <servlet>
+		 <servlet-name>dd</servlet-name>
+		 <servlet-class>DateServlet</servlet-class>
+     </servlet>
+    <!-- servlet url mapping configuration-->
+	<servlet-mapping>
+		 <servlet-name>dd</servlet-name>
+		 <url-pattern>/now.html</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet class configuration-->
+     <servlet>
+		 <servlet-name>ww</servlet-name>
+		 <servlet-class>WordOfTheDayServlet</servlet-class>
+     </servlet>
+    <!-- servlet url mapping configuration-->
+	<servlet-mapping>
+		 <servlet-name>ww</servlet-name>
+		 <url-pattern>/shabd</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- servlet class configuration-->
+     <servlet>
+		 <servlet-name>abc</servlet-name>
+		 <servlet-class>DeptService</servlet-class>
+     </servlet>
+    <!-- servlet url mapping configuration-->
+	<servlet-mapping>
+		 <servlet-name>abc</servlet-name>
+		 <url-pattern>/showdept</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>

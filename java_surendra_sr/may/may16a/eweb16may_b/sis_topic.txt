@@ -1,0 +1,26 @@
+what is defaut session time in apatch tomcat
+30min
+
+how many way we can configure session time
+2 way
+A) through program  /in java code
+session.setMaxInactiveInterval(int interval_inSecond);
+
+	//session.setMaxInactiveInterval(5*60);//5min
+	
+B) through configure //in DD  web.xml   //in minute
+
+ <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+Element : session-timeout
+The session-timeout element defines the default session timeout interval for all sessions created in this web 
+ application. The specified timeout must be expressed in a whole number of minutes. 
+ 
+ If the timeout is 0 or less, 
+ the container ensures the default behaviour of sessions is never to time out. 
+ * If this element is not specified, 
+ the container must set its default timeout period.(30min in tomcat)
+
+Data Type : integer

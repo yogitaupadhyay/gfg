@@ -1,0 +1,54 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+20/08/2018 
+
+String 
+StringBuffer
+StringBuffer 
+	  int length();
+	 char charAt(int);
+	 substring
+	 
+	 append
+	 insert
+	 delete
+	 replace
+	 reverse();
+String s1  = new String("Happy");
+StringBuffer sb  = new StringBuffer("Happy");
+
+
+
+String str ="java";
+
+//how to create String object to String Buffer object
+StringBuffer sb  = new StringBuffer(str);
+
+how to conver StringBuffer object to String object
+
+String str1  = sb.toString();
+
+
+	 
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+Given a matrix with values 0 and 1. A positive row in a matrix is the one with all values in that row equals 1. Also you have been given a button which toggles(1 becomes 0 and 0 becomes 1) all the values of a selected column. You have to press that button exactly k times. Find the maximum number of positive rows possible.

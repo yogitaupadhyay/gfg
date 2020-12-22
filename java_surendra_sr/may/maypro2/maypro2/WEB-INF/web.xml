@@ -1,0 +1,46 @@
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>greet.html</welcome-file>
+	</welcome-file-list>
+	
+    <context-param>
+    <param-name>sis</param-name>
+    <param-value>Success is sure</param-value>
+    </context-param>
+	
+	<context-param>
+    <param-name>jsp</param-name>
+    <param-value>Java Server Pages</param-value>
+    </context-param>
+	
+	<servlet>
+		<servlet-name>ab</servlet-name>
+		<jsp-file>/nit.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ab</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>aaa</servlet-name>
+		<jsp-file>/WEB-INF/sis.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>aaa</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</web-app>

@@ -1,0 +1,78 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+14/05/2019 
+
+Cookie 
+what is Cookie 
+
+  Open Declaration   javax.servlet.http.Cookie
+Creates a cookie, a small amount of information sent by a servlet to a Web browser, saved by the browser, and later sent back to the server.A cookie's value can uniquelyidentify a client, so cookies are commonly used for session management. 
+
+A cookie has a name, a single value, and optional attributessuch as a comment, path and domain qualifiers, a maximum age, and aversion number. Some Web browsers have bugs in how they handle theoptional attributes, so use them sparingly to improve the interoperabilityof your servlets. 
+
+The servlet sends cookies to the browser by using the HttpServletResponse.addCookie method, which addsfields to HTTP response headers to send cookies to thebrowser, one at a time. The browser is expected tosupport 20 cookies for each Web server, 300 cookies total, andmay limit cookie size to 4 KB each. 
+
+The browser returns cookies to the servlet by addingfields to HTTP request headers. Cookies can be retrievedfrom a request by using the HttpServletRequest.getCookies method.Several cookies might have the same name but different path attributes. 
+
+Cookies affect the caching of the Web pages that use them.HTTP 1.0 does not cache pages that use cookies created withthis class. This class does not support the cache controldefined with HTTP 1.1. 
+
+This class supports both the Version 0 (by Netscape) and Version 1(by RFC 2109) cookie specifications. By default, cookies arecreated using Version 0 to ensure the best interoperability.
+Author:Various
+
+how to create cookie?
+Cookie c1  =  new Cookie("name", "value");
+Cookie{
+String getName();//key
+String getValue();//value
+
+}
+
+
+
+how to send cookie to client
+response.addCookie(c1);
+
+how to get cookie
+
+Cookie[]  allCookies  = request.getCookies();
+
+c1=value1
+c2=value2
+c3=value3
+
+for(Cookie c : allCookies){
+ String name  = c.getName();
+  String value  = c.getValue();
+
+}
+
+__________________________________
+URL Rewriting...
+
+url?pkey1=value1&pkey2=value2   
+href=''
+String value  = request.getParameter('pkey1')
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+24/02/2019 
+
+javac 
+
+-X                         Print a synopsis of non-standard options
+
+ -Xlint                     Enable recommended warnings
+
+java -Xlint  file.java
+
+
+
+Generic 1.5
+
+ArrayList nameList  = new ArrayList(); 
+
+ArrayList<String>nameList  = new ArrayList<String>(); 
+ArrayList<Integer>numberList  = new ArrayList<Intege>(); 
+ArrayList<User>numberList  = new ArrayList<User>(); 
+ArrayList<Boolean>attendanceList  = new ArrayList<Boolean>(); 
+
+
+
+
+

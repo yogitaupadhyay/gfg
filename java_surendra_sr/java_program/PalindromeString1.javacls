@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Random;
+import java.util.Arrays;
+import java.util.Date;
+
+
+ public class PalindromeString{
+	public static void main(String args[]){
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter ur string ");
+		String str=scan.nextLine();
+		String revstr="";
+		for(int i=(str.length()-1);i>=0;i--){
+			revstr=revstr+str.charAt(i);
+		}
+		int res=str.compareToIgnoreCase(revstr);
+		if(res==0){
+			
+		System.out.println("string is palindrome");
+		}else{
+		System.out.println("string is  notpalindrome");
+			
+		}
+		
+			}
+}

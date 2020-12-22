@@ -1,0 +1,48 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+29/05/2019 
+ 
+_________________________________________________________
+ 
+<jsp:useBean    id="stu1"    class="sis.com.Student"    scope="request">
+<jsp:setProperty property="*"  name="stu1"/>
+<jsp:setProperty property="address" param="stu_address"    name="stu1"/>
+<jsp:setProperty property="formNumber" 
+ value="<%=System.currentTimeMillis() %>"  name="stu1"/>
+		
+		
+<jsp:getProperty property="beanPropertyName" name="useBeanIdName"/>
+
+
+
+info   getServletInfo()
+contentType="text/plain"
+pageEncoding="utf-8"
+language="java" 
+extends="yourjspfeatureclass"
+
+autoFlush="true"
+    buffer="32kb"
+________________
+ <%@page  session="false"%>   can not access session object
+ <%@page  session="true"%>   can  access session object
+_________
+
+package 
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;

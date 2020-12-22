@@ -1,0 +1,88 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+08/03/2019 
+
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\
+
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+
+javap java.sql.Driver
+javap oracle.jdbc.driver.OracleDriver
+
+
+C:\Users\surendra>javap oracle.jdbc.driver.OracleDriver
+Error: class not found: oracle.jdbc.driver.OracleDriver
+
+echo %classpath%
+%classpath%
+
+set classpath=.;f:\jars\ojdbc14.jar
+
+
+set classpath=.;f:\jars\ojdbc14.jar;
+%claspath%
+echo %classpath%
+.;f:\jars\ojdbc14.jar;
+
+
+oracle.jdbc.driver.OracleDriver
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.SQLException;
+import java.sql.DriverManger;
+import java.sql.ResultSet;
+
+import java.sql.*;
+
+//step 1
+
+
+
+
+Load driver
+ Class.forName("oracle.jdbc.driver.OracleDriver");
+
+step 2
+Connection con  = null;
+con  = DriverManager.getConnection(url,user,password);
+
+step3 create statement
+ Statement stmt  = con.createStatement();
+
+ 
+step4 execute 
+ //A  Selectable
+   ResultSet rs  = stmt.executeQuery("select * from tableName");
+//B  non selectable query Insert update delete create 
+ int  r  = stmt.executeUpdate("insert Or update... tableName");
+ 
+ step5  
+      con.close();
+ 
+tnsnames.ora   details
+*.ora
+
+create table ball(id number(10),color varchar2(20),price number(10,2));
+insert into ball(id,color,price)values(1,'red',50);
+delete from ball where id=1;
+update  ball set color='red and blue' ,price=70  where id=1;
+select * from ball;
+
+
+
+

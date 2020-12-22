@@ -1,0 +1,88 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+drop table my_nit_user;
+ create table my_nit_user(
+ id number primary key,
+ name varchar2(22) not null,
+ login_id varchar2(22) not null unique,
+ login_password varchar2(22) not null ,
+ role varchar2(22) not null
+ );
+ 
+ insert into my_nit_user values(100,'Surendra kumar','sis','123','admin');
+ insert into my_nit_user values(101,'deepak','d123','123','student');
+ insert into my_nit_user values(102,'ramesh','r123','123','student');
+ commit;
+ select * from my_nit_user;
+ select * from my_nit_user where login_id='sis' and login_password='123';
+ 
+ select * from my_nit_user where login_id=? and login_password=?
+
+_________________________________________________________
+http Session
+
+  Open Declaration  
+
+  javax.servlet.http.HttpSession
+
+
+Provides a way to identify a user across more than one page request or visit to a Web site and to store information about that user. 
+
+The servlet container uses this interface to create a sessionbetween an HTTP client and an HTTP server. The session persistsfor a specified time period, across more than one connection orpage request from the user. A session usually corresponds to oneuser, who may visit a site many times. The server can maintain asession in many ways such as using cookies or rewriting URLs. 
+
+This interface allows servlets to 
+•View and manipulate information about a session, such asthe session identifier, creation time, and last accessed time 
+•Bind objects to sessions, allowing user information to persistacross multiple user connections 
+
+When an application stores an object in or removes an object from asession, the session checks whether the object implements HttpSessionBindingListener. If it does,the servlet notifies the object that it has been bound to or unboundfrom the session. Notifications are sent after the binding methods complete.For session that are invalidated or expire, notifications are sent afterthe session has been invalidated or expired. 
+
+When container migrates a session between VMs in a distributed containersetting, all session attributes implementing the HttpSessionActivationListenerinterface are notified. 
+
+A servlet should be able to handle cases in whichthe client does not choose to join a session, such as when cookies areintentionally turned off. Until the client joins the session, isNew returns true. If the client choosesnot to jointhe session, getSession will return a different sessionon each request, and isNew will always return true. 
+
+Session information is scoped only to the current web application(ServletContext), so information stored in one contextwill not be directly visible in another.
+Author:VariousSee Also:HttpSessionBindingListenerHttpSessionContext
+
+
+
+
+
+how to create session object??
+
+HttpSession session  = request.getSession();
+//if not created  , create new one  else  return old  one
+//how to add data/attribute  in session 
+session.setAttribute("key" , objectValue);
+Object  value=   session.getAttribute("key");
+session.removeAttribute("key");
+
+
+how to know session is new or old one ?
+
+boolean isSessionNew  = session.isNew();
+if true new else old
+
+how to get jession id ?
+String  id =  session.getId();
+
+how to know when session created?
+long  creationTimeMs = session.getCreationTime();
+
+how to session expire?
+     session.invalidate();
+
+
+

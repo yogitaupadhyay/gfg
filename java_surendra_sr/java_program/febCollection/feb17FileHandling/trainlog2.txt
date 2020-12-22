@@ -1,0 +1,10 @@
+    568762               name1       147           true
+    296972               name2       192           true
+    464040               name3       238          false
+    663191               name4       244          false
+    262409               name5       197           true
+    920580               name6       165           true
+    358424               name7       220           true
+    143167               name8       133           true
+    172535               name9       171           true
+    398185              name10       262          false

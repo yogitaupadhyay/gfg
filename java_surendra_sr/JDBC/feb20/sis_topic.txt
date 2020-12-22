@@ -1,0 +1,74 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+20/02/2019 
+
+create table my_table(
+num   number(15)
+);
+
+insert into my_table(num)values(11);
+select count( *) from my_table;
+select * from my_table;
+truncate table my_table;
+
+
+java.sql.Statement
+			java.sql.PreparedStatement
+
+Connection{
+		java.sql.Statement createStatement()  *
+		java.sql.PreparedStatement prepareStatement(String sql)
+}
+
+
+Statement: "insert into my_table(num)values(150)"
+PreparedStatement: "insert into my_table(num)values(?)"
+
+PreparedStatement  pstmt  = null;
+
+String sql = "..........? ?"
+ pstmt =   con.prepareStatement(sql);
+
+how to set ? parameter value
+pstmt.setXxx(pos,value);
+
+selectable 
+      rs  = pstmt.executeQuery();
+non-selectable 
+      int  pstmt.executeQuery();
+	  
+pstmt.setInt(pos,value)
+pstmt.setLong(pos,value)
+pstmt.setFloat(pos,value)
+pstmt.setBoolean(pos,value)
+pstmt.setString(pos,value)
+pstmt.setDate(pos,value)
+
+create table sis_user(
+id varchar2(20),
+password varchar2(20),
+role varchar2(20)
+);
+insert into sis_user (id,password,role)values('sis1','123','admin');
+insert into sis_user (id,password,role)values('sis2','123','super admin');
+insert into sis_user (id,password,role)values('sis3','123','guest');
+commit;
+select  * from sis_user;
+
+
+select  * from sis_user where id='sis1' and password='123';
+

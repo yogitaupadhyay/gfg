@@ -1,0 +1,75 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+03/03/2019 
+List{
+Iterator  iterator()
+ListIterator  listIterator()
+}
+
+
+java.util.ListIterator extends java.util.Iterator{
+ boolean hasNext();
+ java.lang.Object next();
+ void remove();
+
+ boolean hasPrevious();
+ java.lang.Object previous();
+ 
+ int nextIndex();
+ int previousIndex();
+ 
+ void set(java.lang.Object);  //update
+ void add(java.lang.Object);//add new element
+
+
+ 
+ 
+  Open Declaration   java.util.ListIterator<E>
+
+
+An iterator for lists that allows the programmerto
+ traverse the list in either direction, 
+ modify the list during iteration, and 
+ obtain the iterator'scurrent position in the list.  
+						Map													
+							|
+		________    |							SortedMap(I)	
+		|									             |
+  (AC)AbstractMap      NavigableMap(I)            Serializable    Cloneable
+						|			|
+					TreeMap(C) 
+ 
+ _________________________________________________
+					(I)Collection
+												Set(I)				 
+(AC)AbstractCollection             SortedSet(I)            
+(AC)AbstractSet                        NavigableSet(I)   Serializable(I)  Cloneable(I)
+  
+									(C) TreeSet    
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++									
+ Compiled from "Stack.java"
+ 
+public class java.util.Stack extends java.util.Vector{
+         Object push(java.lang.Object);   //add
+          Object pop();   //remove  and return removed item
+          Object peek();    // return top object
+          int search(Object);
+}
+

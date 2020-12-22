@@ -1,0 +1,84 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+17/03/2019 
+
+  create table my_user(
+  id number(10) primary key,
+  user_name varchar2(30) not null,
+  login_id varchar2(30) not null unique,
+  login_password varchar2(30) not null,
+  role varchar2(30) not null,
+  created_date timestamp default sysdate
+  );
+  
+  insert into my_user(id,user_name,login_id,login_password,role)
+  values(1,'surendra kumar','sis1','123','super admin');
+  
+  insert into my_user(id,user_name,login_id,login_password,role)
+  values(2,'keshari','nit1','123','admin');
+    insert into my_user(id,user_name,login_id,login_password,role)
+  values(3,'munmun','nit2','123','student');
+  
+  commit;
+  
+  select * from my_user;
+  select * from my_user where login_id='abc' and login_password='432';
+  
+  
+  select * from my_user where login_id='sis1' and login_password='123';
+  
+  create table TODO(
+   id number primary key,
+  title varchar2(50) not null,
+  details varchar2(100) ,
+  when timestamp not null
+  );
+  
+  create sequence TODO_SEQ;
+  
+  insert into todo( ID, TITLE, DETAILS, WHEN)
+  values(TODO_SEQ.nextval,'test','dummy todo',sysdate);
+  
+  
+  insert into todo( ID, TITLE, DETAILS, WHEN)
+  values(TODO_SEQ.nextval,'test2','dummy todo2',sysdate);
+commit;
+select * from todo;  
+  
+  
+  
+  insert into todo( ID, TITLE, DETAILS, WHEN)  values(TODO_SEQ.nextval,?,?,?)
+  
+  
+  
+  create table nit_stu_img(
+	id number primary key,
+	stu_id number not null,
+	file_name varchar2(50) ,
+	file_data blob,
+	when timestamp default sysdate
+  );
+  
+  create sequence nsi_seq start with 1001;
+  
+  insert into nit_stu_img( ID, stu_id, file_name, file_data)
+  values(nsi_seq.nextval,101,'test.jpg',null);
+  
+  select  ID, STU_ID, FILE_NAME from nit_stu_img;
+  
+  
+  insert into nit_stu_img( ID, stu_id, file_name, file_data) values(nsi_seq.nextval,?,?,?);

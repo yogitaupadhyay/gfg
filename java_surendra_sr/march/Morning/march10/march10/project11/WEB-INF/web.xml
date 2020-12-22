@@ -1,0 +1,55 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+   
+	<servlet>
+		 <servlet-name>s1</servlet-name>
+		 <servlet-class>FrontServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s1</servlet-name>
+		 <url-pattern>/fs</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		 <servlet-name>h1</servlet-name>
+		 <servlet-class>HtmlCreatorHelper</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>h1</servlet-name>
+		 <url-pattern>/htmlhelper</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		 <servlet-name>h2</servlet-name>
+		 <servlet-class>ExcelCreatorHelper</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>h2</servlet-name>
+		 <url-pattern>/excelhelper</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		 <servlet-name>h3</servlet-name>
+		 <servlet-class>PlainCreatorHelper</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>h3</servlet-name>
+		 <url-pattern>/texthelper</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		 <servlet-name>aaa</servlet-name>
+		 <servlet-class>MimeTestServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>aaa</servlet-name>
+		 <url-pattern>/leader</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

@@ -1,0 +1,3 @@
+class Train extends Toy {
+	 
+ }

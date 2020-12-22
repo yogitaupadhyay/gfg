@@ -1,0 +1,59 @@
+
+#req
+
+ 1 to 10
+ 
+ limit
+ 
+ upper & lower limit
+ list out rainbow color    1- 7
+ keyboard funtion key names  1 12
+ mca sem total sem marks  1-6
+ btech  1-8
+ 
+ 10 example
+ 
+ while   do while
+ n number input
+ sum 
+ -veSum
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

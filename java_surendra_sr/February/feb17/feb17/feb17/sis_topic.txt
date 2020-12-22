@@ -1,0 +1,39 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+17/02/2019 
+
+
+
+
+  Open Declaration   java.io.PrintWriter
+
+
+Prints formatted representations of objects to a text-output stream. 
+This class implements all of the print methods found in PrintStream. 
+It does not contain methods for writing raw bytes, for which a program
+ should use un encoded byte streams. 
+
+Unlike the PrintStream class, if automatic flushing is 
+enabledit will be done only when one of the println, printf, or format methods is invoked, 
+rather than whenever a newline characterhappens to be output. 
+These methods use the platform's own notion of lineseparator rather than 
+the newline character. 
+
+Methods in this class never throw I/O exceptions, although some of
+ itsconstructors may. The client may inquire as to whether any errors
+ haveoccurred by invoking checkError().
+Since:JDK1.1Author:Frank YellinMark Reinhold

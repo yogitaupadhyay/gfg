@@ -1,0 +1,45 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+26/02/2019 
+java.util.Map{
+ int size();
+ boolean isEmpty();
+ 
+ Object put(Object key, Object  value);  //add key and value
+ void putAll(Map otherMap);
+ Object  get(Object  key);         //  get value by key
+
+ Object remove(Object  key);  // k,v will removed and return value
+ void clear();   //delete all 
+ 
+ java.util.Set keySet();  //get all keys
+ java.util.Collection values();  //get values
+ 
+ boolean containsKey(Object key);   //search key in map
+ boolean containsValue(Object);    //search value
+ 
+HashMap<Type,Type>map  = new HashMap<Type,Type>();  
+
+
+
+
+
+
+
+
+
+

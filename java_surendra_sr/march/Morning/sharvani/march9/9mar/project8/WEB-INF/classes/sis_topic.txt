@@ -1,0 +1,74 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+09/03/2019 
+request param
+
+context param (key,value)  configure (web.xml) deployment descriptor
+context init param cofigure by system admin or develepor
+project name
+logo
+email  mobile
+db configure
+
+
+
+web.xml
+<context-param>
+		<param-name>key</param-name>
+		<param-value>value</param-value>
+</context-param>
+
+how to get  context param value from java code
+
+ServletContext context  = getServletContext();
+
+String paramValue= context.getInitParameter("param_key");
+ 
+
+
+<context-param>
+		<param-name>driver_class_name</param-name>
+		<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+</context-param>
+<context-param>
+		<param-name>db_url</param-name>
+		<param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+</context-param>
+
+_________________________________________________
+how to configure  init param(config)
+where config inside<servlet>    here   </servlet>
+how 
+<init-param>
+	<param-name>key1</param-name>
+	<param-value>value1</param-value>
+</init-param>
+_____________________________________
+how to access from java code?
+ServletConfig  conf   = getServletConfig();
+ServletConfig{
+	String getInitParameter(java.lang.String);
+}
+String value  = config.getInitParameter("param_key");
+
+
+
+
+
+
+
+

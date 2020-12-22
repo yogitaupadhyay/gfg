@@ -1,0 +1,55 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+08/03/2019 
+--drop table student;
+--truncate table student;
+
+create table student(
+id number primary key,
+name varchar2(30) not null,
+branch varchar2(30) not null,
+age number(2)
+);
+
+insert into student(id,name,branch,age)values(101,'ramesh','mca',22);
+insert into student(id,name,branch,age)values(102,'gita','mca',23);
+insert into student(id,name,branch,age)values(103,'rita','it',22);
+insert into student(id,name,branch,age)values(104,'deepak','cse',21);
+--insert into student(id,name,branch,age)values(?,?,?,?);
+
+commit;
+select * from student;
+select id, name,age,branch from student;
+update student set name='ramesh kumar',age=24,branch='it'  where id=101;
+--update student set name=?,age=?,branch=?  where id=?;
+
+delete from student where id=101;
+--delete from student where id=?;
+
+
+
+
+Show link or form		url in xml			          Classes		                    Required db
+Show all Student 		showall	                  ShowAllStudentServlet	   		db
+Add student from	    	addform	                  StudentAddFormServlet	
+Add student submit		addstudent	              AddStudentServlet	 			db
+delete 							deletestu	                  DeleteStudentServlet			db
+Update form				updateForm	              UpdateStudentFormServlet	db
+Update submit				updateStudent			  UpdateStudentServlet			db
+
+
+

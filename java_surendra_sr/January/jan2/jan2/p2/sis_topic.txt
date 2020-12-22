@@ -1,0 +1,43 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+02/01/2019 
+echo %classpath%
+set classpath=.;E:\p2\classes;
+echo %classpath%
+javac -d E:\p2\classes  E:\p2\src\sis\student\nit\Greet.java
+set classpath=.;e:\p2\classes;
+javap sis.student.nit.Greet
+java sis.student.nit.Greet
+
+
+
+
+E:\p2>
+
+		¦   sis_topic.txt
+		¦
+		+---classes
+		¦   +---sis
+		¦       +---student
+		¦           +---nit
+		¦                   Greet.class
+		¦
+		+---src
+			+---sis
+				+---student
+					+---nit
+							Greet.java

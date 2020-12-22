@@ -1,0 +1,73 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+02/03/2019 
+Collection.sort(list)
+Collection.sort(list,  Comparator)
+
+
+IntegerSortByDesc implements Comparator<Integer>{
+
+int compare(Integer num1, Integer  number){
+
+   if(num1.intValue()>num2.intValue()){
+     return -1;
+   }else if(num1.intValue()<num2.intValue()){
+     return +1;
+   }else{
+     return 0;
+   }
+
+}
+
+}
+
+
+java.lang.Comparable{
+  int compareTo(Object)
+}
+Collections.sort(list)   : if list containe has comparable type elements
+
+
+java.util.Comparator{
+ int compare(Object obj1, Object obj2);
+}
+
+
+Collections.sort(list,new ComparatorClass())
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ interface java.util.Collection extends java.lang.Iterable{
+
+public interface java.lang.Iterable{
+    public abstract java.util.Iterator iterator();
+}
+
+
+public interface java.util.Iterator{
+      boolean hasNext();  
+     java.lang.Object next();
+      void remove();
+}
+
+   Iterator  it =  list.iterator();
+   Iterator <Type> it =  list.iterator();
+
+
+
+

@@ -1,0 +1,89 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+04/03/2019 
+Compiled from "LinkedList.java"
+public class java.util.LinkedList<E> extends java.util.AbstractSequentialList<E> implements java.util.List<E>, java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable {
+
+
+
+
+
+
+
+
+  public void addFirst(E);
+  public void addLast(E);
+  public E getFirst();
+  public E getLast();
+  public E removeFirst();
+  public E removeLast();
+  
+  public void add(int, E);
+  public E get(int);
+  public E set(int, E);
+  
+
+  
+  
+  
+  
+  
+  public E peek();//
+  public E peekFirst();
+  public E peekLast();
+  
+  public boolean offer(E);   /Adds the specified element as the tail
+  public boolean offerFirst(E);//head
+  public boolean offerLast(E);//Adds the specified element as the tail
+  
+  --remove ---------------
+  public E poll();//Retrieves and removes the head (first element) of this list.
+  public E pollFirst();
+  public E pollLast();
+   
+   if no element return null
+  
+  
+  public E remove();
+  public E removeFirst();
+  public E removeLast();
+   if no element thorws Exception
+   
+}
+
+
+ public boolean offer(E);   /Adds the specified element as the tail
+  public boolean offerFirst(E);//head
+  public boolean offerLast(E);//Adds the specified element as the tail
+_____________________________________________________
+
+
+
+An unbounded priority queue based on a priority heap.The elements of the priority queue are ordered according to their natural ordering, or by a Comparatorprovided at queue construction time, depending on which constructor isused. A priority queue does not permit null elements.A priority queue relying on natural ordering also does not permitinsertion of non-comparable objects (doing so may result in ClassCastException). 
+
+The head of this queue is the least elementwith respect to the specified ordering. If multiple elements aretied for least value, the head is one of those elements -- ties arebroken arbitrarily. The queue retrieval operations poll, remove, peek, and element access theelement at the head of the queue. 
+
+A priority queue is unbounded, but has an internal capacity governing the size of an array used to store theelements on the queue. It is always at least as large as the queuesize. As elements are added to a priority queue, its capacitygrows automatically. The details of the growth policy are notspecified. 
+
+This class and its iterator implement all of the optional methods of the Collection and Iterator interfaces. The Iterator provided in method iterator() is not guaranteed to traverse the elements ofthe priority queue in any particular order. If you need orderedtraversal, consider using Arrays.sort(pq.toArray()). 
+
+Note that this implementation is not synchronized.Multiple threads should not access a PriorityQueueinstance concurrently if any of the threads modifies the queue.Instead, use the thread-safe java.util.concurrent.PriorityBlockingQueue class. 
+
+Implementation note: this implementation providesO(log(n)) time for the enqueuing and dequeuing methods(offer, poll, remove() and add);linear time for the remove(Object) and contains(Object)methods; and constant time for the retrieval methods(peek, element, and size). 
+
+This class is a member of the Java Collections Framework.
+Type Parameters:<E> the type of elements held in this collectionSince:1.5Author:Josh Bloch, Doug Lea

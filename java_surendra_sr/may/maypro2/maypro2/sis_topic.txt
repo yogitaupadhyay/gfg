@@ -1,0 +1,73 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+greet.jsp
+greet_jsp.java{
+ public void _jspInit() {}
+ public void _jspDestroy() { }
+ public void _jspService( HttpServletRequest request,HttpServletResponse response){
+  }
+
+}
+
+req1
+x.jsp >      x_jsp.java>
+x_jsp.java> compilation   >>  x_jsp.class
+loading.....
+       _jspInit()
+	  _jspService
+	  
+request2.....
+          check   x.jsp change or not
+		  if no
+		    call  _jspService()
+			
+		   if yes 
+            jspfile to javafile
+			javafile to class file	
+			 then load , init service 
+			
+	  
+	  ___________________________________________________
+	  jsp tags
+	  
+	  
+	  A )  Scripting Tag
+	                         1) expression tag  <%=javacode inside print%>      pw.print()
+	                         2) scriptlet tag  <%java code inside service method%>
+	                         3)declaration tag <%! java code outside service%>
+	  
+	  B) Directive Tag    <%@ %>
+	               1)Page Directive    <%@page  (attribute*) %>
+				    2)?
+					3)?
+	  C)?				
+	  
+	  
+	  ____________________________implicit object_____(9)________
+ 
+	  
+	  javax.servlet.http.HttpServletRequest 		request, 
+	  javax.servlet.http.HttpServletResponse 		response
+	   javax.servlet.jsp.JspWriter                         out
+	   
+      javax.servlet.ServletContext                        application   
+       javax.servlet.http.HttpSession                    session         
+       javax.servlet.ServletConfig                         config
+
+	   java.lang.Throwable									exception	
+	   java.lang.Object 										page 
+	   javax.servlet.jsp.PageContext                     pageContext;

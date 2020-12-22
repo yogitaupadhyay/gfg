@@ -1,0 +1,41 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+18/03/2019 
+
+
+
+
+  
+  create table nit_stu_assignment(
+	id number primary key,
+	stu_id number not null,
+	file_name varchar2(50) ,
+	file_data clob,
+	when timestamp default sysdate
+  );
+  
+  create sequence nsa_seq start with 1;
+  
+  insert into nit_stu_assignment( ID, stu_id, file_name, file_data)
+  values(nsa_seq.nextval,101,'test.java',null);
+  
+  select  ID, STU_ID, FILE_NAME ,file_data  from nit_stu_assignment;
+  
+  
+  insert into nit_stu_assignment( ID, stu_id, file_name, file_data) values(nsa_seq.nextval,?,?,?);
+
+  commit;

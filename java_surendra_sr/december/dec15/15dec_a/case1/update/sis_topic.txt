@@ -1,0 +1,58 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+15/12/2018 
+object instance entity........
+
+public class Sun{ 
+  private  static int totalSun;
+		private  Sun(){ 
+		     ++totalSun;
+			System.out.println(this  +" created " + totalSun);
+		 }
+
+		 
+	private static Sun sunObject ;//default null
+  
+  public static Sun getSun(){
+  public static Sun getSunObject(){
+  public static Sun get(){
+  public static Sun getInstance(){
+  
+  
+      if(sunObject==null){   
+			sunObject  = new Sun();
+	  }
+    return sunObject;
+  }		 
+		 
+ }//End of class 
+
+
+ single ton 
+ 
+ 1 make constructor private
+ 2 same class ref declare for holding created new object
+ 3 give one public static method  which return object
+     {
+	       login
+	 }
+ 
+ 
+ 
+ 
+ 
+ 

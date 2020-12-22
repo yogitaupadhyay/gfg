@@ -1,0 +1,46 @@
+//optimal final
+#include<iostream>
+using namespace std;
+int abss(int a){
+    if(a>=0)return a;
+    else return a*-1;
+}
+int visit[11],maxd=10000;int j,k,n,hx,hy,ox,oy,arr[11][2],t;
+void fun(int prevx,int prevy,int count,int dis,int n){
+    int i;
+    if(dis>maxd)return;
+	if(count==n){
+		dis+=(abss(prevx-hx)+abss(prevy-hy));
+		if(dis<maxd)maxd=dis;
+		return;
+	}
+	else{
+	    
+		for(i=0;i<n;i++){
+			if(visit[i]==0){
+				visit[i]=1;
+				count++;
+				fun(arr[i][0],arr[i][1],count,dis+(abss(arr[i][0]-prevx)+abss(arr[i][1]-prevy)),n);
+				visit[i]=0;
+				count--;
+			}
+		}
+	}
+}
+int main(){
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	//int arr[n][2];
+	cin>>ox>>oy>>hx>>hy;
+	int i;
+	for(i=0;i<n;i++){
+		cin>>arr[i][0]>>arr[i][1];
+	}
+	//cout<<n<<"--\n";
+	fun(ox,oy,0,0,n);
+	cout<<"#"<<10-t<<" "<<maxd<<"\n";
+	maxd=10000;
+	for(j=0;j<11;j++)visit[j]=0;
+	}		
+}

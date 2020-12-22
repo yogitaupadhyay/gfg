@@ -1,0 +1,36 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+9 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544, 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+30/07/2018 
+String 
+
+java.lang.String
+
+
+Class ob  = new Class();
+ob.methodName();
+
+java.util.Scanner scan  = new java.util.Scanner("input data");
+xxx value  = scan.nextXxx();
+xxx  = type   Int float byte short long double boolean 
+int value  = scan.nextInt();
+float value  = scan.nextFloat();
+
+String value  = scan.next();
+String value  = scan.nextLine();
+
+
+

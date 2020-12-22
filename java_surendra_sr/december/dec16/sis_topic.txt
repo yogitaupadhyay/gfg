@@ -1,0 +1,66 @@
+
+16/12/2018 
+
+ md e:\mypro\pro1
+ md e:\mypro\pro1\src
+ md e:\mypro\pro1\bin_classes
+ tree/f e:\mypro
+
+ E:\MYPRO
+	+---pro1
+		+---bin_classes
+		+---src
+		
+javac -d e:\mypro\pro1\bin_classes e:\mypro\pro1\src\Greet.java
+
+set classpath=.;e:\mypro\pro1\bin_classes;
+echo %classpath%
+
+java Greet
+
+
+E:\MYPRO
+¦   sis_topic.txt
+¦
++---pro1
+    +---bin_classes
+    ¦       Greet.class
+    ¦
+    +---src
+            Greet.java
+
+java Greet   if same dir ok			
+java Greet   if NOT same dir  Error
+
+set classpath=.;e:\mypro\pro1\bin_classes;		
+java Greet   if NOT same dir  OK		
+set classpath=.;classpath1;classpath2;
+set classpath=.;e:\mypro1\bin;f:\proj2\classes;
+set classpath=.;e:\mypro1\bin;
+
+		
+ md e:\mypro\pro2
+ md e:\mypro\pro2\src
+ md e:\mypro\pro2\src\sis
+ md e:\mypro\pro2\src\sis\nit
+ md e:\mypro\pro2\bin
+ tree/f e:\mypro
+e:\mypro\pro2\src\sis\nit\Greet.java
+ Greet.java
+ package sis.nit;
+ //todo
+__________________________________
+ tree/f e:\mypro
+ javac e:\mypro\pro2\bin  e:\mypro\pro2\src\sis\nit\Greet.java
+ set classpath=.;e:\mypro\pro2\bin;
+ javap sis.nit.Greet
+ java sis.nit.Greet
+ 
+ javap sis.nit.Greet
+ java sis.nit.Greet
+ 
+ 
+		
+		
+		
+		

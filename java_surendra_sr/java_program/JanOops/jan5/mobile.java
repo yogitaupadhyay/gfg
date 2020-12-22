@@ -1,0 +1,3 @@
+ class mobile extends Toy{
+	 
+ }

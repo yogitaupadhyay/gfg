@@ -1,0 +1,74 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+13/01/2019 
+
+
+
+
+
+
+ 
+public class java.io.File extends  Object {
+
+
+
+    public static final char separatorChar;
+    public static final  String separator;
+    public static final  String pathSeparator;
+
+    public java.io.File( String);
+	
+    public  String getName();
+    public  String getPath();
+    public boolean exists();
+    public boolean isDirectory();
+    public boolean isFile();
+    
+	public long length();
+    public boolean mkdir();
+    public boolean createNewFile()       throws java.io.IOException;
+    public boolean delete();
+    public boolean renameTo(java.io.File);
+    public long lastModified();//ms
+	public  String[] list();
+    public java.io.File[] listFiles();
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public boolean canRead();
+    public boolean canWrite();
+    public boolean isHidden();
+
+    public boolean isAbsolute();
+    public  String getAbsolutePath();
+    public java.io.File getAbsoluteFile();
+    public  String getCanonicalPath()       throws java.io.IOException;
+    public java.io.File getCanonicalFile()       throws java.io.IOException;
+    public java.net.URL toURL()       throws java.net.MalformedURLException;
+    public java.net.URI toURI();
+    
+
+	
+    
+}
+

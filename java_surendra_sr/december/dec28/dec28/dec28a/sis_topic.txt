@@ -1,0 +1,82 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+28/12/2018 
+
+how to load class at run time
+
+new Random()
+new "Random"
+
+java.lang.Object
+
+java.lang.Class{
+
+    static public  Class   forName("ClassNameStr")
+
+}
+
+   
+
+
+Class c  = Class.forName("YourClassNameAsString");
+
+Class c  = Class.forName("SisStudent");
+Class c  = Class.forName("Elephant");
+
+String className = "Elephant";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String className = new Scanner(System.in).nextLine();
+String className = args[0];
+
+
+//dynamic class loading....
+Class c  = Class.forName(className);
+
+//create object 
+Object obj1  =   c.newInstance();
+Object obj2  =   c.newInstance();
+Object obj3  =   c.newInstance();
+
+   obj.toString();
+   
+
+
+
+
+
+
+

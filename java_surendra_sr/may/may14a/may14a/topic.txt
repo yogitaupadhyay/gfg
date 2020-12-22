@@ -1,0 +1,24 @@
+how to send extra header info....
+response.setHeader("key","value");
+
+create sequence siscrick_seq;
+create table siscrick(
+sno number primary key,
+Over number(3),
+ball number(2),
+run number(1));
+
+insert into siscrick(sno,over,ball,run)values(siscrick_seq.nextval,&over,&ball,&run);
+
+create or replace procedure siscrickpro(o number, b number, r number)
+as
+begin
+insert into siscrick(sno,over,ball,run)values(siscrick_seq.nextval,o,b,r);
+commit;
+end;
+/
+
+execute siscrickpro(1,2,6);
+
+
+//updateCrickData.java(jdbc)

@@ -1,0 +1,63 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+10/03/2019 
+select * from emp;
+
+SELECT ename ,job,sal, deptno,empno from emp;
+
+SELECT empno,ename ,job,sal, deptno from emp;
+SELECT empno,job,sal, deptno,ename  from emp;
+
+
+
+rs.next();
+
+xxx value = rs.getXxx(int colNumber)
+xxx  value =rs.getXxx(String colName)
+
+
+
+java.sql.Date    rs.getDate("colName")
+
+
+ResultSet rs  = stmt.executeQuery("select .....");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

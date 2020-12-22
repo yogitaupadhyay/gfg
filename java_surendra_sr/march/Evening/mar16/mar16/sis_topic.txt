@@ -1,0 +1,80 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+16/03/2019 
+
+drop table t1;
+create table t1(c1 number);
+select count(*) from t1;
+
+insert into t1 (c1)values(12325);
+truncate table t1;
+select * from t1;
+
+java.sql.PreparedStatement extends java.sql.Statement
+
+?
+
+
+Connection{
+	Statement createStatement() 
+	PreparedStatement prepareStatement(String sql)
+}
+
+how to get prepared Statement
+step1
+ PreparedStatement  pstmt = con.prepareStatement("sql stmt ? ?");
+ //step 2 set value
+  pstmt.setXxx(position,value);
+  xxx =type(int byte short.... String Date  blob clob  )
+  
+ step3    executeUpdate()  
+  
+
+
+  create table my_user(
+  id number(10) primary key,
+  user_name varchar2(30) not null,
+  login_id varchar2(30) not null unique,
+  login_password varchar2(30) not null,
+  role varchar2(30) not null,
+  created_date timestamp default sysdate
+  );
+  
+  insert into my_user(id,user_name,login_id,login_password,role)
+  values(1,'surendra kumar','sis1','123','super admin');
+  
+  insert into my_user(id,user_name,login_id,login_password,role)
+  values(2,'keshari','nit1','123','admin');
+    insert into my_user(id,user_name,login_id,login_password,role)
+  values(3,'munmun','nit2','123','student');
+  
+  commit;
+  
+  select * from my_user;
+  select * from my_user where login_id='abc' and login_password='432';
+  
+  
+  select * from my_user where login_id='sis1' and login_password='123';
+  
+  
+  
+  select * from my_user where login_id='sis1' or 1=1 and login_password='123'
+  select * from my_user where login_id='sis1' or 'A'='A' and login_password='123'
+  
+  ' sis1 'or 'a'='a' '
+  sis1 'or 'a'='a'
+  String str  = "'sis1' or 1=1"

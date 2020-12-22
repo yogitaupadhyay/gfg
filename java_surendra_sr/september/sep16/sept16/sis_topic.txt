@@ -1,0 +1,29 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+16/09/2018 
+
+int [][]  arr = {  { 11,22,33,44},{ 5,3,2,1},{ 4,3,5,6,7}	};
+
+int [][]  arr = {  
+						{ 11,22,33,44},
+						{ 5,3,2,1},
+						{ 4,3,5,6,7}
+					};
+
+
+  int indexPos  = java.util.Arrays.binarySearch(arr,element)
+

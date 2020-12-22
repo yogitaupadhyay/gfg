@@ -1,0 +1,48 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+17/02/2019 
+--drop table stu;
+
+create table stu(
+id number(10) primary key,
+name varchar2(30) not null,
+age number(2) not null,
+dob date not null
+);
+
+insert into stu (id,name,age,dob)values(1,'ramesh',22,'10-may-1999');
+insert into stu (id,name,age,dob)values(2,'Gita',22,'13-jun-1999');
+insert into stu (id,name,age,dob)values(3,'rita',21,'10-jul-1999');
+commit;
+select * from stu;
+
+update stu set name='rita kumari',age=23,dob='11-jul-1998' where id=3;
+delete from stu where id=1;
+
+
+
+ String sql = "select * from Dept where deptno=1111";
+			rs  = stmt.executeQuery(sql);
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+			System.out.println(rs.next());	
+

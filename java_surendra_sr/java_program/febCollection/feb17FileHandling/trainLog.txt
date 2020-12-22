@@ -1,0 +1,10 @@
+    532529               name1       262          false
+    371244               name1       268          false
+    628920               name1       126           true
+     53190               name1       221           true
+    676105               name1       136           true
+    213152               name1       229          false
+    940574               name1       123          false
+    159900               name1       265           true
+    572411               name1       289           true
+    521929               name1       131          false

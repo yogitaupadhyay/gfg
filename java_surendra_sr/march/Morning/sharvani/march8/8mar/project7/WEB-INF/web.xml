@@ -1,0 +1,66 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+  
+
+     <servlet>
+		 <servlet-name>s1</servlet-name>
+		 <servlet-class>ShowAllStudentServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s1</servlet-name>
+		 <url-pattern>/showall</url-pattern>
+	</servlet-mapping>
+   
+  <servlet>
+		 <servlet-name>s2</servlet-name>
+		 <servlet-class>StudentAddFormServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s2</servlet-name>
+		 <url-pattern>/addform</url-pattern>
+	</servlet-mapping>
+	
+	
+    <servlet>
+		 <servlet-name>s3</servlet-name>
+		 <servlet-class>AddStudentServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s3</servlet-name>
+		 <url-pattern>/addstudent</url-pattern>
+	</servlet-mapping>
+   
+  
+    <servlet>
+		 <servlet-name>s4</servlet-name>
+		 <servlet-class>DeleteStudentServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s4</servlet-name>
+		 <url-pattern>/deletestu</url-pattern>
+	</servlet-mapping>
+   
+   
+   <servlet>
+		 <servlet-name>s5</servlet-name>
+		 <servlet-class>UpdateStudentFormServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s5</servlet-name>
+		 <url-pattern>/updateForm</url-pattern>
+	</servlet-mapping>
+   
+   
+  <servlet>
+		 <servlet-name>s6</servlet-name>
+		 <servlet-class>UpdateStudentServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s6</servlet-name>
+		 <url-pattern>/updateStudent</url-pattern>
+	</servlet-mapping>
+
+</web-app>

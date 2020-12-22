@@ -1,0 +1,64 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+29/05/2019 
+
+<!-- html comment -->
+ 
+ <%-- jsp comment --%>
+ 
+Scripting 
+Directive tag
+				<%@page%>
+				<%@include%>
+				 <%@taglib%> 	?
+
+jsp Action Tag				 
+			 
+		<jsp:forward page="test2_helper.jsp" />
+		<jsp:include page="test2_helper.jsp" />
+
+
+<jsp:include page="test2_helper.jsp">
+    <jsp:param  name="p1"  value="success"/>
+    <jsp:param  name="p2"  value="100"/>
+ </jsp:include>
+		
+<jsp:forward page="test2_helper.jsp">
+    <jsp:param  name="p1"  value="success"/>
+    <jsp:param  name="p2"  value="100"/>
+ </jsp:include>
+		
+		
+ request.getParameter("p1")  
+ request.getParameter("p2")  
+		
+		
+_________________________________________________________
+request.setAttribute("dept", dept1);
+
+<%
+Department dept  = null;
+    if(request.getAttribute("dept")!=null){
+    	dept  = (Department)request.getAttribute("dept");
+    }else{
+    	dept = new Department();
+    }    
+%>
+
+<jsp:useBean    id="dept"    class="sis.com.Department"    scope="request">
+		
+<jsp:getProperty property="beanPropertyName" name="useBeanIdName"/>

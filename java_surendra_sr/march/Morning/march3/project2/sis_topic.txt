@@ -1,0 +1,62 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+03/03/2019 
+
+md  project2\WEB-INF
+md  project2\WEB-INF\lib
+md  project2\WEB-INF\classes
+
+
+1st req containser search url pattern
+if found    
+  step 1 load class
+     Class c  = Class.forName("ServletClassName");
+ step2 create object
+   	 Object obj  = c.newInstance();
+    //NOT Possible obj.init()
+  step3 cast it  
+	 if(obj instanceof Servlet){
+	    Servlet s = (Servlet)obj;
+	       create servlet config object and call init method
+		   s.init(cofig);
+	 }
+	 
+	step 4      repeated.......
+            for each request  it create request and response , and Thread
+			object     d call server method
+			s.service(request,response);
+	 
+	 
+	
+	step 5  at last   destroy method called
+	   s.destroy();
+	
+	
+
+
+how many way we can create servlet Class
+  
+  way 1   MyClass implements Servlet (must be impl all 5 method )
+  way 2   MyClass extends GenericSevlet 
+   implments only service method 
+  
+  way 3
+  
+  
+  
+
+

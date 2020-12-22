@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  
+  <welcome-file-list>
+    <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+   <servlet-name>t1</servlet-name>
+   <servlet-class>TestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>t1</servlet-name>
+   <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>aa</servlet-name>
+   <servlet-class>MyService2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>aa</servlet-name>
+   <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+   <servlet-name>bb</servlet-name>
+   <servlet-class>MyService3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>bb</servlet-name>
+   <url-pattern>/s3</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+   <servlet-name>cc</servlet-name>
+   <servlet-class>MyService4 </servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>cc</servlet-name>
+   <url-pattern>/s4</url-pattern>
+  </servlet-mapping>
+   
+</web-app>

@@ -1,0 +1,62 @@
+
+Host Name:                 DESKTOP-ONEVGES
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.17134 N/A Build 17134
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:   
+Product ID:                00331-10000-00001-AA706
+Original Install Date:     06-Nov-18, 10:31:03 PM
+System Boot Time:          21-Mar-19, 6:34:33 PM
+System Manufacturer:       LENOVO
+System Model:              80XH
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 78 Stepping 3 GenuineIntel ~1992 Mhz
+BIOS Version:              LENOVO 4WCN25WW, 23-May-17
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              00004009
+Time Zone:                 (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Total Physical Memory:     3,971 MB
+Available Physical Memory: 1,897 MB
+Virtual Memory: Max Size:  5,891 MB
+Virtual Memory: Available: 2,873 MB
+Virtual Memory: In Use:    3,018 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-ONEVGES
+Hotfix(s):                 9 Hotfix(s) Installed.
+                           [01]: KB4100347
+                           [02]: KB4230204
+                           [03]: KB4456655
+                           [04]: KB4465663
+                           [05]: KB4477137
+                           [06]: KB4485449
+                           [07]: KB4487038
+                           [08]: KB4489907
+                           [09]: KB4489868
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Intel(R) Dual Band Wireless-AC 3165
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.43.1
+                                 IP address(es)
+                                 [01]: 192.168.43.224
+                                 [02]: fe80::9ddf:7dfa:b79c:b2f4
+                                 [03]: 2405:204:a2aa:1592:c8b6:3560:80d7:57c3
+                                 [04]: 2405:204:a2aa:1592:9ddf:7dfa:b79c:b2f4
+                           [02]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+                           [03]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: No
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes

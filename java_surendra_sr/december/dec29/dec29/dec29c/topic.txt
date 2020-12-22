@@ -1,0 +1,9 @@
+notepad click.bat
+REM developed by Surendra IT SOlution
+echo off
+cls
+title SisGreet
+color e
+java SisStart SisGreetGUI
+start/min java SisStart SisGreetSpeGUI
+pause

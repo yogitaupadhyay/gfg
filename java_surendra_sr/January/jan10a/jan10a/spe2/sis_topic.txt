@@ -1,0 +1,48 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+10/01/2019 
+
+how to write custom or user define exception class
+
+
+create one class Which extends any Exception class
+
+step1
+//class MyException  extends Exception
+public class MyException  extends RuntimeException{
+
+   //step2 : provide 1 arst constructor for message init
+      public MyException(String errorMsg){
+	     super(errorMsg);
+	  }
+      
+}
+
+un-Checked 
+public class MyException1  extends RuntimeException{
+      public MyException1(String errorMsg){
+	     super(errorMsg);
+	  }
+}
+
+Checked 
+public class MyException1  extends Exception{
+      public MyException1(String errorMsg){
+	     super(errorMsg);
+	  }
+}
+

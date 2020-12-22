@@ -1,0 +1,142 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+13/05/2019 
+
+
+abstract class javax.servlet.http.HttpServlet extends javax.servlet.GenericServlet{
+  protected void doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected long getLastModified(javax.servlet.http.HttpServletRequest);
+  protected void doHead(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void doPut(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void doDelete(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void doOptions(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void doTrace(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  protected void service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  public void service(javax.servlet.ServletRequest, javax.servlet.ServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+  static {};
+}
+
+}
+
+
+protected void doXxx( HttpServletRequest,HttpServletResponse)
+throws  ServletException, IOException;
+
+doGet  doHead   doPut doDelete doOption doTrace
+doPost
+
+<a> or method='get' ''
+
+doPost    method='post
+___________________________________________________________
+
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+Called by the server (via the service method)to allow a servlet to handle a PUT request.
+
+The PUT operation allows a client to place a file on the server and is similar tosending a file by FTP. 
+
+When overriding this method, leave intactany content headers sent with the request (includingContent-Length, Content-Type, Content-Transfer-Encoding,Content-Encoding, Content-Base, Content-Language, Content-Location,Content-MD5, and Content-Range). If your method cannothandle a content header, it must issue an error message(HTTP 501 - Not Implemented) and discard the request.For more information on HTTP 1.1, see RFC 2616 . 
+
+This method does not need to be either safe or idempotent.Operations that doPut performs can have sideeffects for which the user can be held accountable. When usingthis method, it may be useful to save a copy of theaffected URL in temporary storage. 
+
+If the HTTP PUT request is incorrectly formatted, doPut returns an HTTP "Bad Request" message.
+Parameters:req the HttpServletRequest object thatcontains the request the client made ofthe servletresp the HttpServletResponse object thatcontains the response the servlet returnsto the clientThrows:IOException - if an input or output error occurswhile the servlet is handling thePUT requestServletException - if the request for the PUTcannot be handled
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+Called by the server (via the service method)to allow a servlet to handle a DELETE request.
+
+The DELETE operation allows a client to remove a document or Web page from the server. 
+
+This method does not need to be either safeor idempotent. Operations requested throughDELETE can have side effects for which userscan be held accountable. When usingthis method, it may be useful to save a copy of theaffected URL in temporary storage. 
+
+If the HTTP DELETE request is incorrectly formatted, doDelete returns an HTTP "Bad Request"message.
+Parameters:req the HttpServletRequest object thatcontains the request the client made ofthe servletresp the HttpServletResponse object thatcontains the response the servlet returnsto the client Throws:IOException - if an input or output error occurswhile the servlet is handling theDELETE requestServletException - if the request for theDELETE cannot be handled
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+Called by the server (via the service method) to allow a servlet to handle a GET request. 
+
+Overriding this method to support a GET request alsoautomatically supports an HTTP HEAD request. A HEADrequest is a GET request that returns no body in theresponse, only the request header fields. 
+
+When overriding this method, read the request data,write the response headers, get the response's writer oroutput stream object, and finally, write the response data.It's best to include content type and encoding. When usinga PrintWriter object to return the response,set the content type before accessing the PrintWriter object. 
+
+The servlet container must write the headers beforecommitting the response, because in HTTP the headers must be sentbefore the response body. 
+
+Where possible, set the Content-Length header (with the javax.servlet.ServletResponse.setContentLength method),to allow the servlet container to use a persistent connectionto return its response to the client, improving performance.The content length is automatically set if the entire response fitsinside the response buffer. 
+
+When using HTTP 1.1 chunked encoding (which means that the responsehas a Transfer-Encoding header), do not set the Content-Length header. 
+
+The GET method should be safe, that is, withoutany side effects for which users are held responsible.For example, most form queries have no side effects.If a client request is intended to change stored data,the request should use some other HTTP method. 
+
+The GET method should also be idempotent, meaningthat it can be safely repeated. Sometimes making amethod safe also makes it idempotent. For example,repeating queries is both safe and idempotent, butbuying a product online or modifying data is neithersafe nor idempotent. 
+
+If the request is incorrectly formatted, doGetreturns an HTTP "Bad Request" message.
+Parameters:req an HttpServletRequest object thatcontains the request the client has madeof the servletresp an HttpServletResponse object thatcontains the response the servlet sendsto the clientThrows:IOException - if an input or output error isdetected when the servlet handlesthe GET requestServletException - if the request for the GETcould not be handledSee Also:javax.servlet.ServletResponse.setContentType
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doHead(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+
+Receives an HTTP HEAD request from the protected service method and handles therequest.
+The client sends a HEAD request when it wants to see only the headers of a response, such asContent-Type or Content-Length. The HTTP HEADmethod counts the output bytes in the responseto set the Content-Length header accurately. 
+
+If you override this method, you can avoid computingthe response body and just set the response headersdirectly to improve performance. Make sure that the doHead method you write is both safeand idempotent (that is, protects itself from beingcalled multiple times for one HTTP HEAD request). 
+
+If the HTTP HEAD request is incorrectly formatted, doHead returns an HTTP "Bad Request"message.
+Parameters:req the request object that is passedto the servletresp the response object that the servletuses to return the headers to the clienThrows:IOException - if an input or output error occursServletException - if the request for the HEADcould not be handled
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doTrace(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+Called by the server (via the service method)to allow a servlet to handle a TRACE request.
+A TRACE returns the headers sent with the TRACE request to the client, so that they can be used in debugging. There's no need to override this method. 
+Parameters:req the HttpServletRequest object thatcontains the request the client made ofthe servletresp the HttpServletResponse object thatcontains the response the servlet returnsto the client Throws:IOException - if an input or output error occurswhile the servlet is handling theTRACE requestServletException - if the request for theTRACE cannot be handled
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  Open Declaration   void javax.servlet.http.HttpServlet.doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+
+
+Called by the server (via the service method)to allow a servlet to handle a OPTIONS request.The OPTIONS request determines which HTTP methods the server supports and returns an appropriate header.
+
+ For example, if a servletoverrides doGet, this method returns thefollowing header: 
+
+Allow: GET, HEAD, TRACE, OPTIONS 
+
+There's no need to override this method unless theservlet implements new HTTP methods, beyond thoseimplemented by HTTP 1.1.
+Parameters:req the HttpServletRequest object thatcontains the request the client made ofthe servletresp the HttpServletResponse object thatcontains the response the servlet returnsto the client Throws:IOException - if an input or output error occurswhile the servlet is handling theOPTIONS requestServletException - if the request for theOPTIONS cannot be handled
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++

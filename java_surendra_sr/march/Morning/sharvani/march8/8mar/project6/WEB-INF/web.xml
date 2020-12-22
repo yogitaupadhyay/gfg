@@ -1,0 +1,26 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+  
+
+     <servlet>
+		 <servlet-name>s1</servlet-name>
+		 <servlet-class>Part1FormServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s1</servlet-name>
+		 <url-pattern>/part1</url-pattern>
+	</servlet-mapping>
+   <servlet>
+		 <servlet-name>s2</servlet-name>
+		 <servlet-class>Part2ShowServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s2</servlet-name>
+		 <url-pattern>/part2</url-pattern>
+	</servlet-mapping>
+  
+
+</web-app>

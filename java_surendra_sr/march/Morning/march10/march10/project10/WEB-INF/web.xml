@@ -1,0 +1,36 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+   
+	<servlet>
+		 <servlet-name>s1</servlet-name>
+		 <servlet-class>FrontServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>s1</servlet-name>
+		 <url-pattern>/fs</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		 <servlet-name>hs1</servlet-name>
+		 <servlet-class>HelperServlet1</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>hs1</servlet-name>
+		 <url-pattern>/helper1</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		 <servlet-name>aaa</servlet-name>
+		 <servlet-class>MimeTestServlet</servlet-class>
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>aaa</servlet-name>
+		 <url-pattern>/mime</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

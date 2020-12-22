@@ -1,0 +1,78 @@
+<web-app>
+  
+  <welcome-file-list>
+		<welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+  
+<context-param>
+		<param-name>project_name</param-name>
+		<param-value>Surendra it solutin for  Nit</param-value>
+</context-param>
+  
+<context-param>
+		<param-name>project_logo</param-name>
+		<param-value>sis_logo1.png</param-value>
+</context-param>
+ 
+			  
+  
+     <servlet>
+		 <servlet-name>hs</servlet-name>
+		 <servlet-class>HtmlTrainerServlet</servlet-class>
+		 <init-param>
+			<param-name>trainer_name</param-name>
+			<param-value>Anjali Tripathi</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>mobile</param-name>
+			<param-value>1234567890</param-value>
+		</init-param>
+		<init-param>
+			<param-name>topic1</param-name>
+			<param-value>table form list font  hr div span marquee </param-value>
+		</init-param>
+		 
+		 
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>hs</servlet-name>
+		 <url-pattern>/html</url-pattern>
+	</servlet-mapping>
+    
+	
+	<servlet>
+		 <servlet-name>js</servlet-name>
+		 <servlet-class>JavaTrainerServlet</servlet-class>
+		 
+		   <init-param>
+			<param-name>trainer_name</param-name>
+			<param-value>Surendra Kumar</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>mobile</param-name>
+			<param-value>9009442844</param-value>
+		</init-param>
+		<init-param>
+			<param-name>topic1</param-name>
+			<param-value>cmd batch basic oops EX Cf FH MT</param-value>
+		</init-param>
+		 <init-param>
+			<param-name>topic2</param-name>
+			<param-value>jdbc html css dbms servlet jsp</param-value>
+		</init-param>
+		
+		 <init-param>
+			<param-name>msg</param-name>
+			<param-value>Happy Programming</param-value>
+		</init-param>
+		
+     </servlet>
+	<servlet-mapping>
+		 <servlet-name>js</servlet-name>
+		 <url-pattern>/java</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

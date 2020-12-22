@@ -1,0 +1,65 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+9 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544, 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2018} 
+ */
+
+29/07/2018 
+how to create object
+
+
+
+              ClassName refName=new CassName();
+
+
+
+javac -verbose  FileName.java
+java -verbose  ClassName
+
+
+
+
+-------------------Byte--------------------
+-128    127
+-------------------Short-------------------
+-32768    32767
+-------------------Int-------------------
+-2147483648     2147483647
+-------------------Long-------------------
+-9223372036854775808   9223372036854775807
+------------------------------------
+-------------------float-------------------
+1.4E-45
+3.4028235E38
+-------------------double-------------------
+4.9E-324
+1.7976931348623157E308
+
+
+type variableName;
+
+variableName = value; 
+
+type variableName =value;
+
+
+
+
+
+
+
+
+
+
+
+

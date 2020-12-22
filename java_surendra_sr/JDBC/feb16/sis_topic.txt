@@ -1,0 +1,113 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+10 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2019} 
+ */
+
+16/02/2019 
+  
+  java.sql.*;
+  javax.sql.*;
+
+  
+  load driver
+  get connection
+  create statement
+  execute
+  close
+  
+interface 
+java.sql.Driver
+java.sql.Connection
+java.sql.Statement
+java.sql.ResultSet
+
+----------------------class_________________
+java.sql.SQLException
+java.sql.DriverManager
+
+
+
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib
+ojdbc14.jar
+  oracle.jdbc.driver.OracleDriver.class
+  
+MYSql  
+     mysql-connector-java-5.0.4-bin.jar
+com.mysql.jdbc.Driver.class	 
+
+
+
+set classpath=.;C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;
+set classpath=.;e:myjars\ojdbc14.jar;
+
+
+
+
+pre-Requirement   
+required jar file must be in classpath
+set classpath=.;e:\jars\ojdbc14.jar;
+
+javap oracle.jdbc.driver.OracleDriver
+
+
+---------------step1  Loding driver-------------
+Class.forName("DriverClassName") ;
+
+---------------step2  Get connection -------------
+Connection con  = null;
+               con  = DriverManager.getConnection(url,user,password);
+   
+   URL  ="mainprotocall:subprotocal:@<database>";
+      where <database>     //<host>:<port>:<service_name>
+
+how to find oracle service and port number
+
+tnsnames.ora
+
+C:\oraclexe\app\oracle\product\10.2.0\server\NETWORK\ADMIN
+*.ora
+
+
+---------------step3  Create statement  -------------
+
+Statement stmt  = null;
+       
+	    stmt  = con.createStatement();
+Connection {
+				java.sql.Statement createStatement()
+}
+
+
+int stmt.executeUpdate("sql inser update create delete drop rename ......")
+
+
+Result  stmt.executeQuery("sql select ")
+
+
+
+drop table ball;
+create table ball(id number,color varchar2(20),price number(10,2));
+insert into ball(id,color,price)values(1,'red',300);
+insert into ball(id,color,price)values(2,'blue',200);
+insert into ball(id,color,price)values(3,'green',100);
+
+commit;
+select * from ball;
+
+
+
+
+
+
+
