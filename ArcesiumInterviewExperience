@@ -1,0 +1,55 @@
+https://leetcode.com/discuss/interview-experience/758059/Arcesiumor-fresher-or-banglore-or-july-2020offer
+
+
+Let me introduce  me first ,I have graduated  recently (june 2020) from Information  Technology department from Nit Raipur .I started LC almost 1 year ago then I was able to solve  only few easy level questions  but after one year when I have solved almost 280 questions I am able to solve almost all medium  questions and few hard one .
+Recently  I had chance to get interviewed with arcesium. All question  were easy or medium level.
+Round 1 :
+online technical test having three sections
+
+Analytical /Quant aptitute
+Technical aptitute
+Two coding questions
+a) https://www.geeksforgeeks.org/mobile-numeric-keypad-problem/
+(NOTE: Try to score decent marks in each section ,solving one question and 0 in technical and analytical won't help probably )
+
+Round 2: Technical Interview
+
+Introduce yourself .
+What are the projects you have done.
+You are given a magazine having text data and a another text which is to be made by cutting letters from magazine you have to tell whether given test can actually  be made from magazine letters .I used a hashmap to store count of characters to solve this . then I explained that if we want to optimize memory , we can use an array of size 255 - if string contains all the asscii character set only or we can just use array of size 128 only -if we are using only alphanumeric characters.
+How Hashmap internally  work .
+What is size of built-in Hashmap in java.
+
+This question  was modification  of above one and this time we can use only whole words to make pattern , I used trie to solve this. I think if you have done below question  then most probably  you would be able to do it optimally.
+https://leetcode.com/problems/top-k-frequent-words/description/
+
+Solution for above :
+https://leetcode.com/submissions/detail/329055353/
+
+Round 3 : Part 1
+
+Exaplain concept of oops .
+What is mutable  objects .
+Can all objects be made mutable .
+Given a string "bac" write a program to print all its subsets which are sorted in it's own. I solved it by first sorting the string then generating all subsets using recursion .
+Given an array and another number k you have to find all subarray having sum equal  to k.I was solving it by storing all the sum from 0 to i in temp[i]where temp is another array , then looping in two for loops using I and j to calculate sum of subarray from i  to j and then printing the result .
+my internet connection  broke down when I was writing code for above question  so I had another 3nd round .
+
+Round 3 : Part 2
+
+What is clusterd indexing in dbms  2.How many clusterd  index a table can have .
+Does increasing size of your index table can affect writing operations if yes then how would be the effect positive or negative .
+Why do you want to join  arcesium
+Why should I take you .
+Given a 2 d matrix containing  all distinct elements write a program to print longest path .where longest path is path having all element In increasing order having difference of one e.g. 4,5 6,7,8 can be one path .
+first of all you can think like this , you  have to find longest connected components where components  are connected if above conditions  apply  .I solved it using dfs and storing result max .then he pointed out that it using same result again again then I used memorization , then he said they r running out of time so we stopped there .
+
+HR Round
+
+Tell me about your family ,father, siblings.
+Among all mentioned projects in your resume , which one is best and in which project you get a lot to learn.
+Have you attended coding contest on hackerrank  or any other platforms .
+Are you smart worker or hard worker .
+When can you join us .
+Any previous  offers?
+what was CTC.
